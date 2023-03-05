@@ -32,10 +32,10 @@ public class Class1 {
 	@FindBy(xpath="//button[@id='wpLoginAttempt']")
 	WebElement button;
 	
-	public void gotologin() {
+	public void gotologin(String user,String pass) {
 		login.click();
-		username.sendKeys("ABCD");
-		password.sendKeys("abc@123");
+		username.sendKeys(user);
+		password.sendKeys(pass);
 		button.click();
 	}
 	
