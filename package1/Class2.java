@@ -11,7 +11,7 @@ public class Class2 {
 		WebDriver driver= new ChromeDriver();
 		driver.get("https://en.wikipedia.org/wiki/Main_Page");
 		Class1 obj1=new Class1(driver);	
-		obj1.gotologin();
+		obj1.gotologin("ABCD","abc@123");
 		
 	}
 
